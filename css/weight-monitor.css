@@ -1,0 +1,66 @@
+@import url(../css/variables.css);
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow: hidden;
+}
+.main {
+  height: 762px;
+  background-color: var(--main-color);
+  padding: 24px 12px;
+  display: flex;
+  gap: 16px 0;
+  flex-direction: column;
+}
+.main__button {
+  padding-left: 23px;
+  padding-right: 12px;
+  width: 404px;
+  height: 108px;
+  border: 1px solid #a77c5d;
+  box-shadow: 0px 4px 4px var(--shadows-color);
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.button__account {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+.account__info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.account__name {
+  font-size: 24px;
+  line-height: 28px;
+}
+.account__weight {
+  margin-top: 4px;
+  display: flex;
+}
+.weight__number {
+  font-size: 16px;
+  line-height: 24px;
+}
+.button__info {
+  height: 85px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.info__birthday {
+  font-size: 12px;
+}
+.main__button:hover {
+  background-color: var(--main_hover-color);
+}

@@ -1,0 +1,32 @@
+@import url(../css/variables.css);
+* {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0em;
+}
+#pagewrap {
+  width: 428px;
+  margin: 0 auto;
+}
+#header {
+  position: relative;
+  z-index: 2;
+  height: 56px;
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  background-color: var(--header-color);
+  align-items: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding-left: 12px;
+  padding-right: 13px;
+}
+.header__title {
+  margin-left: 12px;
+  font-size: 24px;
+  line-height: 28px;
+}
+.header__add {
+  justify-self: self-end;
+}
