@@ -1,0 +1,56 @@
+@import url(../css/variables.css);
+.main {
+  height: 762px;
+  background-color: var(--main-color);
+  padding: 23.5px 12.4px;
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  display: flex;
+  gap: 15px;
+}
+.column__text {
+  font-size: 20px;
+  letter-spacing: 0em;
+}
+.column__info {
+  display: flex;
+  align-items: center;
+  height: 24px;
+  font-size: 16px;
+  letter-spacing: 0em;
+}
+.container__column {
+  display: flex;
+  flex-direction: column;
+  gap: 9.5px;
+}
+.footer {
+  position: absolute;
+  bottom: 85px;
+  z-index: 2;
+  width: 428px;
+  height: 80px;
+}
+.footer__hr {
+  width: 428px;
+  border: 1px solid #a77c5d;
+}
+.footer__buttons {
+  position: relative;
+  top: 20px;
+  left: 110px;
+  display: flex;
+  gap: 107px;
+  align-items: center;
+}
+.button__overview,
+.button__history {
+  width: 49px;
+  height: 56px;
+}
+.button__text {
+  margin-top: -2px;
+  font-size: 12px;
+}

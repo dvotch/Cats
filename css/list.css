@@ -1,14 +1,4 @@
 @import url(../css/variables.css);
-button {
-  border: none;
-  background: none;
-  cursor: pointer;
-  margin: 0;
-  padding: 0;
-}
-body {
-  overflow: hidden;
-}
 .main {
   height: 762px;
   background-color: var(--main-color);
@@ -38,6 +28,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: start;
+}
+.info__edit:hover {
+  background-color: antiquewhite;
 }
 .account__name {
   font-size: 24px;
