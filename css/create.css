@@ -1,0 +1,44 @@
+@import url(variables.css);
+input[type="text"],
+input[type="date"],
+select {
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  padding: 0 16px;
+  background-color: var(--main-color);
+  font-weight: 500;
+  font-size: 16px;
+}
+select {
+  width: 404px;
+}
+input[type="text"],
+input[type="date"] {
+  width: 370px;
+}
+.main {
+  height: 762px;
+  background-color: var(--main-color);
+}
+.form__add {
+  padding: 24px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.form__add {
+  position: relative;
+}
+.form__custom-select {
+  position: relative;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.custom-select__arrow {
+  position: absolute;
+  z-index: 2;
+  top: 125px;
+  right: 30px;
+  right: -100;
+}

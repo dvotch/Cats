@@ -1,0 +1,27 @@
+@import url(variables.css);
+.main {
+  height: 762px;
+  background-color: var(--main-color);
+  padding: 21.5px 12px;
+  padding-right: 12.5px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.container__row {
+  margin-top: 1.5px;
+  padding: 12px;
+  display: grid;
+  grid-template-columns: 155px 70px 1fr;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 1px 0px var(--border-color);
+}
+.column__weight {
+  display: flex;
+  align-items: center;
+}
+.column__delete {
+  justify-self: end;
+}
