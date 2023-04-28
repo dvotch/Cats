@@ -31,10 +31,17 @@
       <main class="main">
         <form method="post" class="form__add">
           <input type="text" class="form__custom-text" value="Name" />
-          <select name="species" id="species" class="form__custom-select">
-            <option value="species">Species</option>
-          </select>
-          <input type="date" class="form__custom-date" value="Birthday" />
+          <div class="form__custom-select">
+            <select name="species" id="species">
+              <option value="species">Species</option>
+            </select>
+          </div>
+          <input
+            placeholder="Birthday"
+            type="date"
+            data-date=""
+            class="form__custom-date"
+          />
         </form>
       </main>
     </div>

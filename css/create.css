@@ -9,12 +9,16 @@ select {
   background-color: var(--main-color);
   font-weight: 500;
   font-size: 16px;
+  -webkit-appearance: none;
+  appearance: none;
 }
 select {
   width: 404px;
+  height: 47px;
 }
 input[type="text"],
 input[type="date"] {
+  height: 48px;
   width: 370px;
 }
 .main {
@@ -22,7 +26,7 @@ input[type="date"] {
   background-color: var(--main-color);
 }
 .form__add {
-  padding: 24px 12px;
+  padding: 23px 11px;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -31,14 +35,31 @@ input[type="date"] {
   position: relative;
 }
 .form__custom-select {
+  z-index: 1;
   position: relative;
   -webkit-appearance: none;
   appearance: none;
 }
-.custom-select__arrow {
+.form__custom-select::after {
+  width: 24px;
+  height: 24px;
   position: absolute;
-  z-index: 2;
-  top: 125px;
-  right: 30px;
-  right: -100;
+  background-image: url(/img/arrow_drop_down.svg);
+  z-index: 10;
+  right: 15px;
+  top: 12px;
+  content: "";
+}
+::-webkit-calendar-picker-indicator {
+  position: absolute;
+  right: 22px;
+  background-image: url(/img/Calendar.svg);
+  width: 24px;
+  height: 24px;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+input[type="date"]::-webkit-datetime-edit {
+  display: none;
 }
