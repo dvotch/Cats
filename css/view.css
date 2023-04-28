@@ -35,20 +35,19 @@
   width: 428px;
   border: 1px solid var(--border-color);
 }
-.footer__buttons {
+.footer__container {
   position: relative;
   top: 20px;
-  left: 110px;
   display: flex;
-  gap: 107px;
+  justify-content: space-evenly;
   align-items: center;
 }
-.button__overview,
-.button__history {
+.footer__link {
   width: 49px;
   height: 56px;
 }
-.button__text {
-  margin-top: -2px;
+.link__text {
+  margin-top: -4px;
+  margin-left: -3px;
   font-size: 12px;
 }
