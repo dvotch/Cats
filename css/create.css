@@ -37,8 +37,6 @@ input[type="date"] {
 .form__custom-select {
   z-index: 1;
   position: relative;
-  -webkit-appearance: none;
-  appearance: none;
 }
 .form__custom-select::after {
   width: 24px;
@@ -50,16 +48,21 @@ input[type="date"] {
   top: 12px;
   content: "";
 }
-::-webkit-calendar-picker-indicator {
-  position: absolute;
-  right: 22px;
-  background-image: url(/img/Calendar.svg);
+input::placeholder {
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 16px;
+}
+.form__birthday {
+  position: relative;
+}
+.form__birthday::before {
+  content: "";
   width: 24px;
   height: 24px;
-  padding: 5px;
-  cursor: pointer;
-  border-radius: 3px;
-}
-input[type="date"]::-webkit-datetime-edit {
-  display: none;
+  background-image: url(/img/Calendar.svg);
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  z-index: 10;
 }

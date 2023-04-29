@@ -2,7 +2,7 @@
 .main {
   height: 762px;
   background-color: var(--main-color);
-  padding: 23.5px 12.4px;
+  padding: 22.5px 12px;
 }
 .container {
   display: flex;
@@ -22,7 +22,7 @@
 .container__column {
   display: flex;
   flex-direction: column;
-  gap: 9.5px;
+  gap: 10px;
 }
 .footer {
   position: absolute;
