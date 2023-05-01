@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+:root {
+  --main-color: #f4e8de;
+  --main_hover-color: #f0dbca;
+  --header-color: #a77c5d;
+  --shadows-color: #c4c4c4;
+  --border-color: #a77c5d;
+  --edit_hover-color: antiquewhite;
+  --button_border-color: #a77c5d;
+  --text-color: #000;
+}

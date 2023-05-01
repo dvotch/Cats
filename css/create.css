@@ -1,0 +1,68 @@
+@import url(variables.css);
+input[type="text"],
+input[type="date"],
+select {
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  padding: 0 16px;
+  background-color: var(--main-color);
+  font-weight: 500;
+  font-size: 16px;
+  -webkit-appearance: none;
+  appearance: none;
+}
+select {
+  width: 404px;
+  height: 47px;
+}
+input[type="text"],
+input[type="date"] {
+  height: 48px;
+  width: 370px;
+}
+.main {
+  height: 762px;
+  background-color: var(--main-color);
+}
+.form__add {
+  padding: 23px 11px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.form__add {
+  position: relative;
+}
+.form__custom-select {
+  z-index: 1;
+  position: relative;
+}
+.form__custom-select::after {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  background-image: url(/img/arrow_drop_down.svg);
+  z-index: 10;
+  right: 15px;
+  top: 12px;
+  content: "";
+}
+input::placeholder {
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 16px;
+}
+.form__birthday {
+  position: relative;
+}
+.form__birthday::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-image: url(/img/Calendar.svg);
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  z-index: 10;
+}
